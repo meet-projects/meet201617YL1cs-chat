@@ -126,7 +126,7 @@ class View:
         '''
         You should implement this method.  It should call the
         send() method of the Client object stored in this View
-        instance.  It should also call update the list of messages,
+        instance.  It should also update the list of messages,
         self.msg_queue, to include this message.  It should
         clear the textbox text display (hint: use the clear_msg method).
         It should call self.display_msg() to cause the message
@@ -136,6 +136,8 @@ class View:
 
     def get_msg(self):
         return self.textbox.get_msg()
+
+    
 
     def setup_listeners(self):
         '''
@@ -172,6 +174,9 @@ class View:
         You can get the messages you want from self.msg_queue
         '''
         pass
+
+    def get_client(self):
+        return self.my_client
 ##############################################################
 ##############################################################
 
@@ -185,7 +190,8 @@ if __name__ == '__main__':
     my_view=View()
     _WAIT_TIME=200 #Time between check for new message, ms
     def check() :
-        msg_in=my_view.my_client.receive()
+        #msg_in=my_view.my_client.receive()
+        msg_in=my_view.get_client().receive()
         if not(msg_in is None):
             if msg_in==Client._END_MSG:
                 print('End message received')
