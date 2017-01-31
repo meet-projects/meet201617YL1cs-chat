@@ -82,7 +82,7 @@ class View:
         ###
 
         ###
-        #Make a new client object and store it in this instance of View
+        #Make a new Client object and store it in this instance of View
         #(i.e. self).  The name of the instance should be my_client
         ###
 
