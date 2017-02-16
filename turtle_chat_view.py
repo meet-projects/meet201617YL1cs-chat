@@ -24,7 +24,7 @@
 #1. in draw_box, you will draw (or stamp) the space on which the user's input
 #will appear.
 #
-#2. All TextInput objects have an internal turtle called writer (i.e. self will
+#2. All TextInput objects have an internal turtle called writer (for example, self will
 #   have something called writer).  You can write new text with it using code like
 #
 #   self.writer.write(a_string_variable)
@@ -33,7 +33,7 @@
 #
 #   self.writer.clear()
 #
-#3. If you want to make a newline character (i.e. go to the next line), just add
+#3. If you want to make a newline character (for example, go to the next line), just add
 #   \r to your string.  Test it out at the Python shell for practice
 #####################################################################################
 #####################################################################################
@@ -43,7 +43,7 @@
 #####################################################################################
 #Make a class called SendButton, which will be a subclass of Button.
 #Button is an abstract class with one abstract method: fun.
-#fun gets called whenever the button is clicked.  It's jobs will be to
+#fun gets called whenever the button is clicked.  Its jobs will be to
 #
 # 1. send a message to the other chat participant - to do this,
 #    you will need to call the send method of your Client instance
@@ -83,7 +83,7 @@ class View:
 
         ###
         #Make a new Client object and store it in this instance of View
-        #(i.e. self).  The name of the instance should be my_client
+        #(for example, self).  The name of the instance should be my_client
         ###
 
         ###
