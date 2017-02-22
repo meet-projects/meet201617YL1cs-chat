@@ -153,7 +153,7 @@ class TextInput(metaclass=ABCMeta):
         #Punctuation, etc.
         turtle.onkeypress( self.add_comma, 'comma' )
         turtle.onkeypress( self.add_period, 'period' )
-        turtle.onkeypress( self.add_exclaim, 'exclam' ) #Yes, exclam
+        turtle.onkeypress( self.add_exclaim, '\r' ) #Yes, exclam
         turtle.onkeypress( self.add_colon, 'colon' )
         turtle.onkeypress( self.add_dollar, 'dollar' )
         turtle.onkeypress( self.add_dblquote,'quotedbl')
