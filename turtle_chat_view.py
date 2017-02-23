@@ -181,11 +181,11 @@ class View:
 ##############################################################
 
 
-#########################################################
-#Leave the code below for now - you can play around with#
-#it once you have a working view, trying to run you chat#
-#view in different ways.                                #
-#########################################################
+###########################################################
+#For now, leave the code below alone - you can play around#
+#with it once you have a working view, trying to run your #
+#chat view in different ways.                             #
+###########################################################
 if __name__ == '__main__':
     my_view=View()
     _WAIT_TIME=200 #Time between check for new message, ms
